@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globar variant</title>
+</head>
+<body>
+    <h1>Globar variant</h1>
+</body>
+
+<!-- index1 -->
+<script> 
+    var globarVar = 'globar'
+    console.log('index1',globarVar)
+
+   setTimeout(()=>{
+        console.log('1m')
+    },1000)
+</script>
+<!--index2  -->
+<script>
+    console.log('index2',globarVar)
+</script>
+<!-- for문 -->
+<script>
+    const array = [10, 20, 30];
+
+    for(var index = 0; index < array.length; index + 1){
+        const element = array[index];
+    }
+
+    /** 
+     * console.dir(window)를 찍어보면 전역에 index 값이 들어있는 것을 확인할 수 있다. 이는 해당 값에 접근하거나 수정이 가능하다는 것인데 파일 분산을 
+     * 할경우 변수 값이 변할 수 있는 위험에 노출되어 있다.(window.xxx 에 어떤 값이든 넣을 수 있다.)
+     * for문의 경우 함수 스코프가 아니다. 
+     * 따라서 for문은 const 나 let으로 바꾸는 것이 좋다. 
+     * */
+</script>
+</html>
