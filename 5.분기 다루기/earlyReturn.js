@@ -1,4 +1,4 @@
-// Early Return
+// Early Return을 적절하게 사용합니다.
 
 /**
  * 아래 로직을 간단히 설명하자면, 
