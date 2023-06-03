@@ -1,4 +1,7 @@
-// Array.length
+/**
+ * Array.length
+ * 배열 length을 사용할 때에는 주의깊게 사용하도록 합니다.
+ */
 
 const arr = [1, 2, 3];
 
