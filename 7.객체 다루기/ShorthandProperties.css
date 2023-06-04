@@ -1,0 +1,14 @@
+/* 축약할 수 있는 속성들은 축약을 하도록 합니다. */
+
+.before {
+    background-color: #000;
+    background-image: url(images/bg.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.after {
+    background: #000 url(images/bg.gif) no-repeat;
+    margin: 10px 5px 10px 5px;
+}
+
