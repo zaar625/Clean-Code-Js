@@ -76,5 +76,5 @@ const closeModal = (element) => {
 }
 
 openModal(modal);
-changeColor(modal)
-closeModal(modal)
+changeColor(modal);
+closeModal(modal);
