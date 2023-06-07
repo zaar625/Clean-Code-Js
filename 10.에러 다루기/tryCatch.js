@@ -24,6 +24,7 @@ function handleSubmit(input){
          * history.go('안전한 어딘가로...')
          * clear()
          * element.focus() : 어딘가로 이동을 시켜서 다시 한번 사용자에게 알려줄 수 있습니다.
+         * 비추천하지만 재귀함수를 사용. handleSubmit를 다시 시도한다던지... 등
          */
     } finally {
         //기업: 데이터 분석을 위한 로그
