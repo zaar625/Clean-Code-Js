@@ -11,7 +11,7 @@
  */
 
 function genRandomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min
+    return Math.floor(Math.random() * (max - min + 1)) + min //Math.random : 0 이상 1 미만의 부동소숫점 의사 난수.
 }
 
 //상수 : 항상 일정한 수로 변하지 않는다는 의미입니다.

@@ -20,7 +20,6 @@ getDates('2023-10-01', '2023-10-31'); // 해당 월 날짜를 가져오는 함�
 
 //아래 코드는 4번에 대한 예시입니다.
 //ES2015+
-
 function someFunc2(someArg1, someArg2, someArg3, someArg4) {
     //...
 }

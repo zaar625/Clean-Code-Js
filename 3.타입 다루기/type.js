@@ -10,7 +10,6 @@ console.log(typeof str) // object
 //동적으로 변하는 언어이기 때문에 타입까지 동적입니다. 
 
 //instance
-
 function Person(name, age) {
     this.name = name;
     this.age = age;
@@ -34,4 +33,5 @@ console.log(arr instanceof Object) //true
 console.log(func instanceof Object) //true
 console.log(date instanceof Object)// true
 
-Object.prototype.toString.call(date) // [object Date]
+//? 아래코드는 아직은 뭔말인지 잘 모르겠다. 
+console.log(Object.prototype.toString.call(date)) // [object Date]
