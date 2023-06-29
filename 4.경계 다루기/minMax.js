@@ -15,12 +15,12 @@ function genRandomNumber(min, max) {
 }
 
 //상수 : 항상 일정한 수로 변하지 않는다는 의미입니다.
-const MIN_NUMBER_LIMIT = 1;
-const MAX_NUMBER_LIMIT = 45;
+const MIN_NUMBER_LIMIT = 1; // 초과 vs MIN_IN_NUMBER
+const MAX_NUMBER_LIMIT = 45; // 미만 
 
 genRandomNumber(MIN_NUMBER, MAX_NUMBER);
 
-
+//하지만 사람마다 MIN과 MAX의 경계가 예매하다는 것입니다. (이상-초과 / 이하-미만) 이 또한 컨벤션을 잘 정해야 합니다. 
 const MAX_AGE = 20;
 
 function isAdult(age){
