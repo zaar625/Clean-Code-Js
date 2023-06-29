@@ -8,7 +8,7 @@ ReactDOM.render(
     mountNode
 )
 
-//Is transformed to this JS:
+//바벨을 만나면서 아래 코드처럼 자바스크립트로 변환됩니다. Is transformed to this JS:
 ReactDOM.render(React.createElement('div', {id:'msg'}, 'Hello World!'), mountNode);
 
 
@@ -24,7 +24,7 @@ ReactDOM.render(<div id={condition ? 'msg' : null}>Hello World!</div>, mountNode
 
 /**
  * 아래 코드는 즉시함수(IIFE)를 이용하여, 나타낸 것입니다.
- * { } 괄호 안에는 값과 포현식만 넣을 수 있습니다. 
+ * { } 괄호 안에는 값과 표현식만 넣을 수 있습니다. 
  * 즉시 실행함수는 바로 값을 리턴하기 때문에 아래처럼 사용할 수 있습니다.
  * 또한 논리연산자를 통해서 값으로 표현할 수 있습니다.
  */

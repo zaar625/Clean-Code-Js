@@ -8,7 +8,7 @@ function ReactComponent(){
         password:''
     }) 
 // 아래 괄호([])로 된 부분이  computed-property-name 입니다.
-// 속성에는 계산된 값도 넣을 수 있습니다. 즉, [e.target.name] 이 부분이 계산되어 값이 속성으로 들어간 케이스 입니다. 표현식을 넣을 수 있다는 말이 겠죠.
+// 속성에는 계산된 값도 넣을 수 있습니다. 즉, [e.target.name] 이 부분이 계산되어 값이 속성으로 들어간 케이스 입니다. 표현식을 넣을 수 있다는 말이겠죠.
     const handleChange = (e) => {
         //해당 함수는 이벤트 객체를 받을 수 있습니다. input 마다 이 이벤트객체가 트리거가 됩니다. 
         setState({
@@ -39,23 +39,23 @@ const reducer = handleActions({
 
 // case_03 
 
-const funcName01 = 'func01';
-const funcName02 = 'func02';
-const funcName03 = 'func03';
+const funcName1 = 'func1';
+const funcName2 = 'func2';
+const funcName3 = 'func3';
 
 const obj = {
-    [funcName01](){
-        console.log('func01');
+    [funcName1](){
+        console.log('func1');
     },
-    [funcName02](){
-        console.log('func02');
+    [funcName2](){
+        console.log('func2');
     },
-    [funcName03](){
-        console.log('func03');
+    [funcName3](){
+        console.log('func3');
     },
 };
 
-for(let i = 0; i < 3; i ++) {
+for(let i = 1; i < 3; i ++) {
     console.log(obj['func' + i]())
 }
 

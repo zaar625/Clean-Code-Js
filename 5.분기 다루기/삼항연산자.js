@@ -1,6 +1,7 @@
 /**
  * example1, 2는 같은 코드입니다. 가독성에 있어 어느것이 더 좋은지 생각해봅시다.
  * 아래와 같이 조건이 많을 경우 switch 문을 고려해봅니다.
+ * 조건 ? 식 : 식
  */
 
 function example() {
@@ -34,7 +35,7 @@ const welcomeMe = (isLogin) => {
 
 /**
  * case_03
- * 삼항연산자를 이용할 때, 값 혹은 식을 이요하는 것이 좋습니다. 아래 예시는 함수에서 undefined 반환하므로 좋지 않은 예입니다.
+ * 삼항연산자를 이용할 때, 값 혹은 식을 이용하는 것이 좋습니다. 아래 예시는 함수에서 undefined 반환하므로 좋지 않은 예입니다.
  * 참고로 타입에서 (function name():void) 의 void 는 반환이 없다는 의미입니다. 즉 undefined를 반환합니다.
  * 
  * 삼항연산자를 사용하는 것은 무언가의 값을 만들고 그것을 변수로 담아낼때 가치가 있습니다. 
@@ -44,13 +45,15 @@ function alertMessage(isAdult){
     isAdult
         ? alert('입장이 가능합니다.')
         : alert('입장이 불가능합니다.')
-}
+} //bed case
+
+
 
 // 따라서 함수의 반환값이 있을 경우,
 function alertMessage(isAdult){
     return isAdult ? '입장이 가능합니다.' : '입장이 불가능합니다.';
 }
-//또는
+//또는 값을 이용하여 분기문이 필요할 경우
 function alertMessage(isAdult) {
     const isAdulted = isAdult ? '입장이 가능합니다.' : '입장이 불가능합니다.'
 

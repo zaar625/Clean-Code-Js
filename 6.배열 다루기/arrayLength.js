@@ -39,4 +39,4 @@ const arr3 = [1, 2, 3];
 arr3.clear();
 
 console.log('arr3:',arr3) // []
-console.log(clearArray(arr3))
+console.log(clearArray(arr3)) // []

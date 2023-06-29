@@ -14,7 +14,7 @@ console.log(el.style.height ); //10px
 console.log(el.style.width); //10px
 
 /**
- * ?? 연산자의 좌측값이 null 이나 undefined이면 우측값을 return합니다.
+ * [??] 연산자의 좌측값이 null 이나 undefined이면 우측값을 return합니다.
  * 즉, falsy 값 중에서 null 과 undefined 값만 확인하고 싶을 때 사용합니다.
  */
 

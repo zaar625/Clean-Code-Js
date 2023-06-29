@@ -27,14 +27,14 @@ const result = getWonPrice(price);
 
 //case_02 1000원 초과 리스트만 출력
 
-const suffixWon = (price) => price + '원';
+const surffixWon = (price) => price + '원';
 const isOverOneThounsand = (price) => Number(price) > 1000
 
 
 function getWonPrice(priceList){
     const isOverList = priceList.filter(isOverOneThounsand)
 
-    return isOverList.map(suffixWon);
+    return isOverList.map(surffixWon);
 }
 
 const result2 = getWonPrice(price);

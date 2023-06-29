@@ -21,9 +21,9 @@ const arr2 = [1, 2, 3];
 console.log('isArray?:',Array.isArray(arr2))
 
 if(arr.length){
-    console.log('배열확인');
+    console.log('배열확인'); // 배열 확인
 }
 
 if(typeof arr === 'object'){
-    console.log('배열확인');
+    console.log('배열확인'); // 배열 확인
 }

@@ -1,18 +1,18 @@
-// hasOwnProperty
+// hasOwnProperty : 프로퍼티를 가졌는가.
 
 const person = {
     name :'sangyoon'
-}
+};
 
 console.log(person.hasOwnProperty('name')); //true
 
-//보통 for문을 통해서 많이 사용합니다. 코드 스닙펫을 이용하면, 
+//보통 for문을 통해서 많이 사용합니다. 코드 스닙펫을 이용하면, 아래와 같이 나타나틑데요,
 
-for (const key in object){
-    if(Object.hasOwnProperty.call(object, key)){
-        const element = object[key];
-    }
-}
+// for (const key in object){
+//     if(Object.hasOwnProperty.call(object, key)){
+//         const element = object[key];
+//     }
+// }
 
 /**
  * @see https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
@@ -26,7 +26,7 @@ const foo = {
     bar:'string',
 };
 
-console.log(foo.hasOwnProperty('bar')) //hasOwnProperty
+console.log(foo.hasOwnProperty('anything')) //hasOwnProperty
 
 console.log(Object.prototype.hasOwnProperty.call(foo, 'bar')); //true
 

@@ -7,7 +7,7 @@
 const model = {
     isLogin: false,
     isValidToken:false
-}
+} 
 
 function login() {
     model.isLogin = true;
@@ -29,11 +29,11 @@ const model2 = {
 }
 
 function setLogin(bool){
-    model.isLogin = bool;
+    model2.isLogin = bool;
 }
 
 function setValidToken(bool){
-    model.isValidToken = bool;
+    model2.isValidToken = bool;
 }
 
 function login2(){
