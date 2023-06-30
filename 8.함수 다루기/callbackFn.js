@@ -1,6 +1,6 @@
 // Callback Function
 /**
- * 비동기를 제어하는 기업 이외에 함수의 실행권을 다른함수에 위임하는 것이기도 합니다.
+ * 비동기를 제어하는 기능 이외에 함수의 실행권을 다른함수에 위임하는 것이기도 합니다.
  */
 
 someElement.addEventListener('click', function(e){

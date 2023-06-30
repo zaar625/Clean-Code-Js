@@ -9,7 +9,7 @@ const argument = 'foo';
 example(argument);
 
 /**
- * Parameter (FormalParameter)
+ * Parameter (Formal Parameter)
  * 형식을 갖춘, 매개변수
  */
 

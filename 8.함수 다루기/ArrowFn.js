@@ -32,6 +32,8 @@ const Person = (name, city) => {
 
 const person = new Person('poco', 'korea');
 
+console.log(person)
+
 
 //case04 
 

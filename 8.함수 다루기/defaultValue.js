@@ -33,10 +33,10 @@ function createCarousel({margin = 0, center = false, navElement = 'div'}={}){
 //case 03 
 
 const required = (argName) => {
-    throw new Error('required is ' + argName);
+   console.log('required is ' + argName);
 };
 
-function createCarousel({
+function createCarousel3({
     items = required('items'),
     margin = 0,
     center = false,
@@ -45,7 +45,7 @@ function createCarousel({
     return { margin, center, navElement}
 }
 
-console.log(createCarousel({
+console.log(createCarousel3({
     center:true, 
     navElement:'span'
 }))

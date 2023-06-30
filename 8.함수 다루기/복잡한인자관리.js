@@ -22,7 +22,7 @@ function genSquare(top, right, bottom, left) {
     //...
 }
 
-//case_02 맥락을 알기 어려운 케이스입니다. 
+// case_02 맥락을 알기 어려운 케이스입니다. 
 function createCar(name, brand, color, type) {
     return {
         name, 
@@ -45,13 +45,14 @@ function createCar(name, {brand, color, type}) {
         type
     }
 }
-createCar('차량 이름', {
+console.log(createCar('차량 이름', {
     type:''
-})
+})) //{ name: '차량 이름', brand: undefined, color: undefined, type: '' }
+
 
 // 복잡한 인자 관리하기
 
-function createCar({name, brand, color, type}) {
+function createCar3({name, brand, color, type}) {
     if(!name) {
         throw new Error('name is a required');
     }
@@ -61,4 +62,4 @@ function createCar({name, brand, color, type}) {
     }
 }
 
-createCar({name:'CAR', type:'SUV'}) // brand is a required
+createCar3({name:'CAR', type:'SUV'}) // brand is a required

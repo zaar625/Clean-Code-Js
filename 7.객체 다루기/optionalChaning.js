@@ -11,7 +11,8 @@ console.log(obj?.name) // value
 const response = {
     data : {
         userList:[
-            {name:'jang', info:{
+            {name:'jang', 
+             info: {
                 tel:'010',
                 email:'lee@naver.com'
             }}
@@ -47,3 +48,6 @@ function getUserEmailByIndex(userIndex){
     
     return '알 수 없는 에러가 발생했습니다.'
 }
+/**
+ * @see https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+ */

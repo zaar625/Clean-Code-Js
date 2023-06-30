@@ -36,7 +36,7 @@ function getUserType(type) {
     return USER_TYPE[type] ?? '해당없음';
 }
 
-getUserType('관리자');
+console.log(getUserType('STUDENT')); // 수강생
 
 //아래처럼 작성도 가능합니다. (가장 베스트는 3번째입니다.)
 function getUserType(type) {

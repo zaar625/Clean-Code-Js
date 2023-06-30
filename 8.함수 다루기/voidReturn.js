@@ -30,4 +30,5 @@ function getUserName(name) {
 
 //반환값이 있기 때문에 값 그자체로 함수를 이용할 수 있습니다.
 const isFlug = isAdult(10);
+console.log(isFlug) //false
 console.log(typeof isFlug) //boolean

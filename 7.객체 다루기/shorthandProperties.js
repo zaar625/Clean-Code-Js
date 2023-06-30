@@ -12,3 +12,14 @@ const person = {
     }
 }
 
+// 위 코드를 축약형으로 바꾸자면, 
+
+const person2 = {
+    firstName,
+    lastName,
+    getFullName() {
+        return this.firstName + ' ' + this.lastName;
+    }
+}
+
+console.log(person2)
