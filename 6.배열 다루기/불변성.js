@@ -6,7 +6,7 @@
  */
 // 
 
-const originArray = ['123', '456', '789'];
+const originArray = [123,456,789];
 
 const newArray = originArray;
 

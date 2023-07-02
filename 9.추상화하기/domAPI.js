@@ -1,5 +1,6 @@
 /**
  * HTML에 접근하는 Javascript 코드 추상화
+ * @see https://developer.mozilla.org/en-US/docs/Web/API/Element/append
  */
 
 const loader = () => {
@@ -11,10 +12,13 @@ const loader = () => {
 
     const el3 = document.createElement('div');
     el3.setAttribute("class", "material spinner");
+    
+    el.append(el2);
+    el2.append(el3);
+
+    return el
 }
 
-el.append(el2);
-el2.append(el3);
 
 
 //위 코드를 추상화해봅시다.
@@ -29,7 +33,7 @@ const createLoader = () => {
 }
 
 const createLoaderStyle =({el, el2, el3}) => {
-    el.setAttribute('class',"looading d-flex justify-center mt-3");
+    el.setAttribute('class',"loading d-flex justify-center mt-3");
     el2.setAttribute("class", "relative spinner-container");
     el3.setAttribute("class", "material spinner");
 

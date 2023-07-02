@@ -16,14 +16,20 @@
         data-columns="3"
         data-index-number="12315"
         data-parent-world="cars"
+        data-parent-world="cars"
     >main</main>
 </body>
 <script>
-    const article = document.querySelector('electriccars');
+    const main = document.querySelector('main');
     // 자바스크립트를 다룰때에는 케밥케이스(하이픈)은 사용이 불가능합니다.
-    //css에서도 사용가능합니다.
-    article.dataset.columns;//3
-    article.dataset.indexNumber;//"12315"
-    delete article.dataset.parentWorld;//"cars"
+    // css에서도(선택자) 사용가능합니다.
+    // dataset으로 접근가능합니다.
+     
+    main.dataset.columns;//3
+    main.dataset.indexNumber;// "12315"
+    main.dataset.parentWorld;// "cars"
+    delete main.dataset.parentWorld // 삭제
+
+    //https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*
 </script>
 </html>

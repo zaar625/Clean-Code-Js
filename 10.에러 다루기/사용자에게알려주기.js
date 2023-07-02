@@ -18,7 +18,12 @@ function React() {
     }
 }
 
-console.log(React()); //new를 동반하지 않을 경우 에러가 나타납니다.
+// console.log(React()); //new를 동반하지 않을 경우 에러가 나타납니다.
 
-// 사용자가 input에 잘못 입력했을때, 안내를 해주고 해당 inputBox에 포커스를 잡아줄 경우가 예시가 되겠습니다.
+console.log(new React()); //{ }
+/**
+ * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target
+ */
+
+// 사용자가 input에 잘못 입력했을때, 안내를 해주고 해당 inputBox에 포커스를 잡아 줄 경우가 예시가 되겠습니다.
 // 에러가 나타났을 경우 그저 console 만 찍어내는 것이 아니라, 사용자에게 알려주고 행동을 유도할 수 있는 프론트엔드 개발자가 되어야 합니다.
