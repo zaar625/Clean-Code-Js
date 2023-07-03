@@ -28,4 +28,4 @@ function generatePriceList(){
     Array.from(arguments).map((arg)=> arg + '원') // 이런식으로 작성해야 한다.
 }
 
-generatePriceList(100, 200, 300, 400)
+generatePriceList(100, 200, 300, 400);
